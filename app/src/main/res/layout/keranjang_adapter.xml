@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageKeranjangAdapter"
+                android:padding="5dp"
+                android:src="@drawable/itemasset1"
+                android:layout_weight="35"
+                android:layout_width="0dp"
+                android:layout_height="130dp"/>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/namaBarangKeranjangAdapter"
+                    android:text="Hemat"
+                    android:textSize="20dp"
+                    android:maxLines="2"
+                    android:textColor="#19dc88"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/hargaBarangKeranjangAdapter"
+                    android:text="Rp 120.000"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/minusKeranjangAdapter"
+                        android:src="@drawable/minusicon2"
+                        android:layout_weight="10"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+
+                    <TextView
+                        android:id="@+id/jumlahBarangKeranjangAdapter"
+                        android:text="1"
+                        android:textColor="#000"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/plusKeranjangAdapter"
+                        android:src="@drawable/plusicon2"
+                        android:layout_weight="10"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deleteBarangKeranjangAdapter"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/tongsmphiconasset3"
+                android:layout_weight="10"
+                android:layout_width="0dp"
+                android:layout_height="30dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
