@@ -31,7 +31,7 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Daftar"
+                android:text="Login"
                 android:textSize="30dp"
                 android:gravity="center"
                 android:textColor="#11998E"
@@ -39,41 +39,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <EditText
-                android:id="@+id/namaLengkapDaftar"
-                android:hint="Nama Lengkap"
-                android:paddingStart="25dp"
-                android:paddingEnd="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="13dp"
-                android:fontFamily="@font/poppins_regular"
-                android:background="@drawable/bg_order"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+
 
             <EditText
-                android:id="@+id/nomorTeleponDaftar"
-                android:hint="Nomor Telepon"
-                android:inputType="number"
-                android:paddingStart="25dp"
-                android:paddingEnd="10dp"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:textSize="13dp"
-                android:fontFamily="@font/poppins_regular"
-                android:background="@drawable/bg_order"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <EditText
-                android:id="@+id/emailDaftar"
+                android:id="@+id/emailLogin"
                 android:hint="Email"
                 android:paddingStart="25dp"
                 android:paddingEnd="10dp"
@@ -96,21 +65,21 @@
                 android:layout_height="wrap_content">
 
                 <EditText
-                    android:id="@+id/passwordDaftar"
+                    android:id="@+id/passwordLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_order"
+                    android:fontFamily="@font/poppins_regular"
                     android:hint="Password"
                     android:paddingStart="25dp"
-                    android:paddingEnd="10dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
                     android:paddingBottom="10dp"
-                    android:textSize="13dp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:background="@drawable/bg_order"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:textSize="13dp" />
 
                 <ImageView
                     android:visibility="gone"
-                    android:id="@+id/hidePasswordDaftar"
+                    android:id="@+id/hidePasswordLogin"
                     android:layout_alignParentEnd="true"
                     android:src="@drawable/notseeasset12"
                     android:layout_marginEnd="15dp"
@@ -119,7 +88,7 @@
                     android:layout_height="30dp"/>
 
                 <ImageView
-                    android:id="@+id/seePasswordDaftar"
+                    android:id="@+id/seePasswordLogin"
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="15dp"
                     android:layout_marginTop="5dp"
@@ -130,20 +99,21 @@
             </RelativeLayout>
 
             <TextView
-                android:text="*Gunakan kombinasi angka dan huruf besar"
-                android:textColor="#19dc88"
-                android:layout_marginTop="2dp"
-                android:gravity="end"
-                android:layout_marginEnd="15dp"
-                android:textSize="9dp"
+                android:id="@+id/lupaPasswordLogin"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:text="Lupa password ?"
+                android:gravity="center"
                 android:fontFamily="@font/poppins_light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+
             
             
             <ImageView
                 android:id="@+id/daftarButton"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/daftarbuttonasset10"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"/>
@@ -157,7 +127,7 @@
 
             <LinearLayout
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="20dp"
+
                 android:orientation="horizontal"
                 android:weightSum="50"
                 android:gravity="center"
@@ -183,6 +153,36 @@
                     android:layout_weight="10"
                     android:layout_width="0dp"
                     android:layout_height="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Belum punya akun ?"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="9dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/daftarAkunLogin"
+                    android:text="Daftar sekarang"
+                    android:textColor="#19dc88"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="9dp"
+                    android:fontFamily="@font/poppins_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
