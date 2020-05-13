@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgasset23"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/logoasset2"
+        android:layout_width="190dp"
+        android:layout_height="90dp"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Daftar"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="#11998E"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/namaLengkapDaftar"
+                android:hint="Nama Lengkap"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/nomorTeleponDaftar"
+                android:hint="Nomor Telepon"
+                android:inputType="number"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/emailDaftar"
+                android:hint="Email"
+                android:paddingStart="15dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordDaftar"
+                    android:hint="Password"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="13dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:background="@drawable/bg_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/hidePasswordDaftar"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/notseeasset12"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+                <ImageView
+                    android:id="@+id/seePasswordDaftar"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/seeasset13"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:text="*Gunakan kombinasi angka dan huruf besar"
+                android:textColor="#19dc88"
+                android:layout_marginTop="2dp"
+                android:gravity="end"
+                android:layout_marginEnd="15dp"
+                android:textSize="9dp"
+                android:fontFamily="@font/poppins_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            
+            
+            <ImageView
+                android:id="@+id/daftarButton"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/daftarbuttonasset10"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+            <ImageView
+                android:src="@drawable/atauasset19"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="50"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/facebookDaftar"
+                    android:src="@drawable/facebooklogoasset20"
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"/>
+
+                <View
+                    android:layout_weight="5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <ImageView
+                    android:id="@+id/googleDaftar"
+                    android:src="@drawable/googlelogoasset21"
+                    android:layout_weight="10"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
