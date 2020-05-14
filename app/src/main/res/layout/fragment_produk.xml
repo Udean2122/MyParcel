@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/gambarhijau"
+        android:src="@drawable/greenshapeasset12"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="449dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Pilih paket sesuai keinginanmu !"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/peroranganGambar"
+                android:visibility="gone"
+                android:src="@drawable/perorangan"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/peroranganTulisan"
+                android:text="Perorangan"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+            <ImageView
+                android:id="@+id/perkeluargaGambar"
+                android:visibility="gone"
+                android:src="@drawable/perkeluarga"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/perkeluargaTulisan"
+                android:text="Perkeluarga"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
+            <ImageView
+                android:id="@+id/sembakoGambar"
+                android:src="@drawable/sembako"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/sembakoTulisan"
+                android:visibility="gone"
+                android:text="Sembako"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/recyclerViewPerorangan"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerViewPerkeluarga"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSembako"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/gambarhijau"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Produk Promo"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="17dp"
+                android:textColor="#19dc88"
+                android:layout_weight="50"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Lihat Semua"
+                android:textSize="13dp"
+                android:textColor="#19dc88"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_weight="48"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:src="@drawable/backasset5"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewProdukPromo"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

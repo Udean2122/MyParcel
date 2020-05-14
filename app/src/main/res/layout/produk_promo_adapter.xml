@@ -5,72 +5,75 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/barangProduk"
         app:cardUseCompatPadding="true"
-        android:layout_margin="5dp"
-        app:cardCornerRadius="15dp"
+        app:cardCornerRadius="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="horizontal"
             android:weightSum="100"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageKeranjangAdapter"
-                android:padding="5dp"
+                android:id="@+id/gambarBarangProdukPromoAdapter"
+                android:padding="10dp"
                 android:src="@drawable/itemasset1"
-                android:layout_weight="35"
+                android:layout_weight="30"
                 android:layout_width="0dp"
                 android:layout_height="130dp"/>
 
+            <View
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"/>
+
             <LinearLayout
-                android:padding="5dp"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_weight="50"
+                android:layout_weight="60"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/namaBarangKeranjangAdapter"
+                    android:id="@+id/namaBarangProdukPromoAdapter"
                     android:text="Hemat"
+                    android:textColor="#000"
                     android:textSize="20dp"
-                    android:maxLines="2"
-                    android:textColor="#19dc88"
-                    android:fontFamily="@font/poppins_medium"
+                    android:fontFamily="@font/poppins_regular"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/hargaBarangKeranjangAdapter"
+                    android:id="@+id/hargaBarangProdukPromoAdapter"
                     android:text="Rp 120.000"
-                    android:textSize="15dp"
                     android:textColor="#000"
+                    android:textSize="14dp"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="20dp"/>
 
                 <LinearLayout
                     android:weightSum="17"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="5dp"
                     android:orientation="horizontal"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/minusKeranjangAdapter"
+                        android:id="@+id/minusProdukPromoAdapter"
                         android:src="@drawable/minusicon2"
                         android:layout_weight="5"
                         android:layout_width="0dp"
                         android:layout_height="40dp"/>
 
                     <TextView
-                        android:id="@+id/jumlahBarangKeranjangAdapter"
+                        android:id="@+id/jumlahBarangProdukPromoAdapter"
                         android:text="1"
                         android:textColor="#000"
-                        android:fontFamily="@font/poppins_regular"
+                        android:fontFamily="@font/poppins_light"
                         android:textSize="25dp"
                         android:layout_gravity="center"
                         android:gravity="center_horizontal"
@@ -79,7 +82,7 @@
                         android:layout_height="wrap_content"/>
 
                     <ImageView
-                        android:id="@+id/plusKeranjangAdapter"
+                        android:id="@+id/plusProdukPromoAdapter"
                         android:src="@drawable/plusicon2"
                         android:layout_weight="5"
                         android:layout_width="0dp"
@@ -87,16 +90,8 @@
 
                 </LinearLayout>
 
-            </LinearLayout>
 
-            <ImageView
-                android:id="@+id/deleteBarangKeranjangAdapter"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="bottom"
-                android:src="@drawable/tongsmphiconasset3"
-                android:layout_weight="10"
-                android:layout_width="0dp"
-                android:layout_height="30dp"/>
+            </LinearLayout>
 
         </LinearLayout>
 

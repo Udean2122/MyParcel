@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/barangProduk"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/gambarBarangProdukAdapter"
+                android:padding="5dp"
+                android:src="@drawable/itemasset1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+            <LinearLayout
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    android:layout_weight="80"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/namaBarangProdukAdapter"
+                        android:text="Hemat"
+                        android:textColor="#19dc88"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/hargaBarangProdukAdapter"
+                        android:text="Rp 120.000"
+                        android:textColor="#000"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/plusicon1"
+                    android:layout_weight="20"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
