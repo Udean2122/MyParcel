@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Alamat Tujuan"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/namaPenerimaAlamatProfile"
+                android:hint="Nama Penerima"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/nomorPenerimaAlamatProfile"
+                android:hint="Nomot Telepon Penerima"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/kelurahanAlamatProfile"
+                android:hint="Kelurahan"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/kecamatanAlamatProfile"
+                android:hint="Kecamatan"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/alamatDetailAlamatProfile"
+                android:hint="Alamat Detail (RT/Rw, NO, Blok)"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/kodePosAlamatProfile"
+                android:hint="Kode Pos"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/bg_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="lengkapi kolom alamat dengan benar agar pengiriman tidak terkendala"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="70dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/okAlamatProfile"
+                android:text="Ok"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/tombol1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

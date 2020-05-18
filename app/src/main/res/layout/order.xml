@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:background="@drawable/background1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+
+            android:src="@drawable/xasset4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/barangProduk"
+            android:layout_margin="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:weightSum="100"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gambarBarangProdukPromoAdapter"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/itemasset1"
+                    android:layout_weight="30"
+                    android:layout_width="0dp"
+                    android:layout_height="150dp"/>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="65"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Parcel"
+                        android:textColor="#000"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:id="@+id/namaBarangOder"
+                        android:text="Hemat"
+                        android:textColor="#19dc88"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/jenisBarangOder"
+                        android:text="Perorangan"
+                        android:textColor="#19dc88"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"/>
+
+                    <LinearLayout
+                        android:weightSum="20"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/signs"
+                            android:layout_weight="8"
+                            android:layout_gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"/>
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:text="Berhasil ditambahkan"
+                            android:textSize="16dp"
+                            android:textColor="#606060"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:textColor="#fff"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="5dp"
+                        android:hint="Lihat Keranjang"
+                        android:textColorHint="#fff"
+                        android:fontFamily="@font/poppins_medium"
+                        android:background="@drawable/tombol"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:text="Ingin menambahkan Kantung Uang Lebaran"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Pembeli dapat menambahkan isi parsel dengan Amplop sesuai dengan nominal uang yang diinginkan. Jangan khawatir ParselKu sangat amanah dan profesional"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="11dp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/backgroundbulat1"
+            android:paddingStart="20dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Nominal Dalam Amplop"
+                android:layout_weight="49"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_lightitalic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:background="#DADADA"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="25dp"/>
+
+            <EditText
+                android:id="@+id/uangAmplopDetaiProduk"
+                android:background="#FFFAFAFA"
+                android:hint="masukkan nominal"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/poppins_lightitalic"
+                android:layout_weight="49"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

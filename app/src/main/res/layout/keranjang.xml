@@ -74,29 +74,101 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <TextView
-                        android:text="Total Pembelian"
-                        android:textColor="#19dc88"
-                        android:textSize="18dp"
-                        android:fontFamily="@font/poppins_medium"
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:weightSum="100"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/totalPembelianKeranjang"
-                        android:text="Rp 200.000"
-                        android:textColor="#11998E"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/poppins_medium"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/prosesKeranjang"
-                        android:src="@drawable/prosesbuttonasset7"
-                        android:layout_marginTop="10dp"
+                            <TextView
+                                android:text="Total Pembelian"
+                                android:textColor="#19dc88"
+                                android:textSize="18dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/totalPembelianKeranjang"
+                                android:text="Rp 200.000"
+                                android:textColor="#11998E"
+                                android:textSize="25dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_weight="50"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="Total Berat"
+                                android:textColor="#19dc88"
+                                android:textSize="18dp"
+                                android:gravity="end"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:id="@+id/totalBeratnKeranjang"
+                                android:text="-+ 16 Kg"
+                                android:gravity="end"
+                                android:textColor="#FF3D00"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp"
+                        android:weightSum="100"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"/>
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/belanjaLagiKeranjang"
+                            android:background="@drawable/tombol2"
+                            android:hint="Belanja Lagi"
+                            android:textColorHint="#19dc88"
+                            android:textSize="16dp"
+                            android:layout_weight="48"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"/>
+
+                        <View
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"/>
+
+                        <Button
+                            android:id="@+id/prosesKeranjang"
+                            android:hint="Proses"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textSize="16dp"
+                            android:background="@drawable/tombol1"
+                            android:layout_weight="48"
+                            android:layout_width="0dp"
+                            android:layout_height="45dp"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

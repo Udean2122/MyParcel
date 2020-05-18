@@ -29,7 +29,7 @@
                 android:padding="5dp"
                 android:layout_gravity="center"
                 android:orientation="vertical"
-                android:layout_weight="50"
+                android:layout_weight="65"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content">
 
@@ -44,59 +44,132 @@
                     android:layout_height="wrap_content"/>
 
                 <TextView
-                    android:id="@+id/hargaBarangKeranjangAdapter"
-                    android:text="Rp 120.000"
-                    android:textSize="15dp"
+                    android:id="@+id/beratBarangKeranjangAdapter"
+                    android:text="-+ 7kg"
+                    android:textSize="12dp"
+                    android:maxLines="2"
                     android:textColor="#000"
                     android:fontFamily="@font/poppins_medium"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <LinearLayout
-                    android:weightSum="17"
-                    android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    android:layout_width="150dp"
+                    android:weightSum="100"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/minusKeranjangAdapter"
-                        android:src="@drawable/minusicon2"
-                        android:layout_weight="5"
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_weight="55"
                         android:layout_width="0dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/jumlahBarangKeranjangAdapter"
-                        android:text="1"
-                        android:textColor="#000"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="25dp"
-                        android:layout_gravity="center"
-                        android:gravity="center_horizontal"
-                        android:layout_weight="5"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"/>
 
-                    <ImageView
-                        android:id="@+id/plusKeranjangAdapter"
-                        android:src="@drawable/plusicon2"
-                        android:layout_weight="5"
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/mailiconasset4"
+                                android:padding="2dp"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"/>
+
+                            <TextView
+                                android:id="@+id/amplopBarangKeranjangAdapter"
+                                android:text="Amplop 2pc"
+                                android:layout_marginStart="7dp"
+                                android:textSize="11dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:id="@+id/hargaBarangKeranjangAdapter"
+                            android:text="Rp 120.000"
+                            android:textSize="15dp"
+                            android:textColor="#000"
+                            android:fontFamily="@font/poppins_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="40"
                         android:layout_width="0dp"
-                        android:layout_height="40dp"/>
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:weightSum="17"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/minusKeranjangAdapter"
+                                android:src="@drawable/minusicon2"
+                                android:layout_weight="3.5"
+                                android:layout_gravity="center"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"/>
+
+                            <TextView
+                                android:id="@+id/jumlahBarangKeranjangAdapter"
+                                android:text="1"
+                                android:textColor="#000"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textSize="20dp"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal"
+                                android:layout_weight="4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"/>
+
+                            <ImageView
+                                android:id="@+id/plusKeranjangAdapter"
+                                android:src="@drawable/plusicon2"
+                                android:layout_gravity="center"
+                                android:layout_weight="3.5"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
+                <View
+                    android:layout_marginTop="5dp"
+                    android:background="#838383"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"/>
+
+                <ImageView
+                    android:id="@+id/deleteBarangKeranjangAdapter"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/tongsmphiconasset3"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+
+
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/deleteBarangKeranjangAdapter"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="bottom"
-                android:src="@drawable/tongsmphiconasset3"
-                android:layout_weight="10"
-                android:layout_width="0dp"
-                android:layout_height="30dp"/>
+
 
         </LinearLayout>
 
